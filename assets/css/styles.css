@@ -134,6 +134,7 @@ img {
 }
 .home__img {
   position: absolute;
+  display: block;
   right: 0;
   bottom: 0;
   width: 260px;
@@ -156,10 +157,14 @@ img {
 }
 @media screen and (max-width: 881px) {
   .home__img {
-    right: 40px;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 200px;
     bottom: -50%;
   }
   .home__img img {
+    display: flex;
+    justify-content: center;
     width: 200px;
     height: auto;
   }
