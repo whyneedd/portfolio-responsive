@@ -109,9 +109,25 @@ img {
   margin-left: 1rem;
 }
 .l-header .nav__menu .nav__items .nav__links {
+  position: relative;
   display: block;
   font-weight: 550;
   color: rgb(0, 0, 0);
+}
+.l-header .nav__menu .nav__items .nav__links::after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin-top: 12px;
+  width: 0%;
+  height: 4px;
+  border-radius: 1rem;
+  background: rgb(97, 125, 255);
+  transition: width 0.5s;
+}
+.l-header .nav__menu .nav__items .nav__links:hover::after {
+  width: 100%;
+  color: rgb(97, 125, 255);
 }
 
 /* ===== Home ===== */
@@ -213,13 +229,17 @@ img {
 .work__data .container .row .cart__work {
   position: relative;
   display: flex;
-  padding: 5px;
   margin: 6px;
   max-width: 400px;
   height: auto;
+  overflow: hidden;
+  border-radius: 0.55rem;
 }
 .work__data .container .row .cart__work img {
-  border-radius: 0.55rem;
+  transition: transform 0.5s ease-in-out;
+}
+.work__data .container .row .cart__work img:hover {
+  transform: scale(1.1);
 }
 
 /* ===== Contact ===== */

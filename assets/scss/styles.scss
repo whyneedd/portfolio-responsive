@@ -112,9 +112,26 @@ img {
             display: inline-block;
             margin-left: 1rem;
             .nav__links {
+                position: relative;
                 display: block;
                 font-weight: 550;
                 color: rgb(0, 0, 0);
+            }
+           
+            .nav__links::after {
+                content: "";
+                position: absolute;
+                display: block;
+                margin-top: 12px;
+                width: 0%;
+                height: 4px;
+                border-radius: 1rem;
+                background: rgb(97, 125, 255);
+                transition: width .5s;
+            }
+            .nav__links:hover::after {
+                width: 100%;
+                color: rgb(97, 125, 255);
             }
         }
     }
@@ -218,12 +235,16 @@ img {
                 .cart__work {
                     position: relative;
                     display: flex;
-                    padding: 5px;
                     margin: 6px;
                     max-width: 400px;
                     height: auto;
+                    overflow: hidden;
+                    border-radius: 0.55rem;
                     img {
-                        border-radius: 0.55rem;
+                        transition: transform 0.5s ease-in-out;
+                    }
+                    img:hover {
+                        transform: scale(1.1);
                     }
                 }
             }
@@ -313,4 +334,3 @@ img {
         margin-left: 1.5rem;
     }
 }
-
