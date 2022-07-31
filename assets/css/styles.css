@@ -1,0 +1,304 @@
+/* ===== Google Fonts ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/* ===== Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+*::selection {
+  color: rgb(0, 0, 0);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section__title {
+  position: relative;
+  display: flex;
+  margin-top: 25px;
+  font-size: 35px;
+  justify-content: center;
+  color: rgb(97, 125, 255);
+}
+.section__title::after {
+  position: absolute;
+  content: "";
+  top: 3rem;
+  width: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  height: 0.45rem;
+  border-radius: 0.55rem;
+  background: rgb(97, 125, 255);
+}
+
+/* ===== Header ===== */
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 15px 0;
+}
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 10px 0;
+}
+.l-header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.34);
+}
+
+.l-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-header .nav__menu .nav__items {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.l-header .nav__menu .nav__items .nav__links {
+  display: block;
+  font-weight: 550;
+  color: rgb(0, 0, 0);
+}
+
+/* ===== Home ===== */
+.bd-grid {
+  display: grid;
+  gap: 1rem;
+  max-width: 1017px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home {
+  position: relative;
+  margin-top: 10px;
+  padding: 4rem 0 5rem;
+}
+.home__data {
+  align-self: center;
+  width: 350px;
+}
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 260px;
+}
+.home__img img {
+  border-radius: 0.55rem;
+}
+.home__btn {
+  margin-top: 15px;
+  padding: 10px 50px;
+  display: block;
+  border: none;
+  outline: none;
+  border-radius: 0.55rem;
+  background: rgb(97, 125, 255);
+}
+.home__title {
+  position: relative;
+  font-size: 3rem;
+}
+@media screen and (max-width: 881px) {
+  .home__img {
+    margin: auto;
+    bottom: -50%;
+  }
+  .home__img img {
+    width: 200px;
+    height: auto;
+  }
+  .home__data {
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .home__btn {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* ===== About ===== */
+.about {
+  position: relative;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 0 5rem;
+}
+.about__data {
+  padding-top: 25px;
+  text-align: center;
+}
+
+/* ===== Work ===== */
+.work {
+  position: relative;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.work__data .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work__data .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.work__data .container .row .cart__work {
+  position: relative;
+  display: flex;
+  padding: 5px;
+  margin: 6px;
+  max-width: 400px;
+  height: auto;
+}
+.work__data .container .row .cart__work img {
+  border-radius: 0.55rem;
+}
+
+/* ===== Contact ===== */
+.contact {
+  position: relative;
+  max-width: 1015px;
+  margin: auto;
+}
+.contact .contact__box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.contact .contact__box .container-h {
+  margin-top: 25px;
+}
+.contact .contact__box .container-h form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact__box .container-h form input,
+.contact .contact__box .container-h form textarea {
+  position: relative;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  margin: 8px;
+}
+.contact .contact__box .container-h form .contact__btn {
+  position: absolute;
+  border: none;
+  padding: 10px 50px;
+  bottom: -25%;
+  left: 50%;
+  font-weight: 550;
+  transform: translateX(-50%);
+  background: rgb(97, 125, 255);
+}
+
+/* ===== Footer ===== */
+.footer {
+  width: 100%;
+  padding-bottom: 0;
+  position: relative;
+}
+.footer__footter {
+  padding: 20px 0;
+  background: rgb(97, 125, 255);
+}
+.footer__container {
+  max-width: 1024px;
+  margin: auto;
+}
+.footer__row {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.footer__cart {
+  padding: 15px 0;
+}
+.footer__social {
+  display: inline-block;
+}
+.footer__icon {
+  font-size: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 720px) {
+  .nav__menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 881px) {
+  .logo {
+    margin-left: 1.5rem;
+  }
+}
+/* ===== ===== */
+/* ===== ===== */
+
+/*# sourceMappingURL=styles.css.map */
