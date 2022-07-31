@@ -162,7 +162,8 @@ img {
     }
     @media screen and (max-width: 881px) {
         &__img {
-            left: 25%;
+            left: 50%;
+            transform: translateX(-50%);
             bottom: -50%;
             img {
                 width: 200px;

@@ -156,7 +156,8 @@ img {
 }
 @media screen and (max-width: 881px) {
   .home__img {
-    left: 25%;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -50%;
   }
   .home__img img {
