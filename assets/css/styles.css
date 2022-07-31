@@ -156,7 +156,7 @@ img {
 }
 @media screen and (max-width: 881px) {
   .home__img {
-    margin: auto;
+    left: 25%;
     bottom: -50%;
   }
   .home__img img {
@@ -298,7 +298,5 @@ img {
     margin-left: 1.5rem;
   }
 }
-/* ===== ===== */
-/* ===== ===== */
 
 /*# sourceMappingURL=styles.css.map */
