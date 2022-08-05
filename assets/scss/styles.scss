@@ -344,13 +344,16 @@ img {
         backdrop-filter: blur(5px);
         transition: right .3s;
     }
+
     .nav__list.active {
         right: 0;
     }
+
     .nav__list .nav__items .nav__links {
         font-size: 23px;
         margin-bottom: 8px;
     }
+
     .humbger {
         position: absolute;
         top: 1.5rem;
@@ -361,6 +364,7 @@ img {
         border: none;
         cursor: pointer;
     }
+
     .humbger .bar, .humbger::before, .humbger::after {
         content: "";
         display: block;
